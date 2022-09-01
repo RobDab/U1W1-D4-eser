@@ -17,15 +17,15 @@
   </head>
   <body>
     <header>
-      <div>
-        <img src="assets/img/logo.svg" alt="logo del blog" width="250" height="60" />
+      <div class="logo__payoff">
+        <img src="assets/img/logo.svg" alt="logo del blog" width="250" height="60" id="logo" />
         <p>Epicode - Il blog dei developers</p>
       </div>
-      <nav>
+      <nav class="nav__pages">
         <ul>
-          <li><a href="index.html" title="Home Page">Home</a></li>
-          <li><a href="articoli.html" title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
-          <li><a href="contatti.html" title="Candidati inviando un tuo cv">Lavora con noi</a></li>
+          <li><a href="index.html" title="Home Page" class="pages">Home</a></li>
+          <li><a href="articoli.html" title="Elenco degli articoli tecnici pubblicati" class="pages">Articoli</a></li>
+          <li><a href="contatti.html" title="Candidati inviando un tuo cv" class="pages">Lavora con noi</a></li>
         </ul>
       </nav>
     </header>
@@ -33,19 +33,19 @@
     <main>
       <article>
         <h1>Come creare un template per i post</h1>
-        <p>di Mario Rossi - <span> pubblicato il 25-10-2020</span></p>
+        <p></i>di Mario Rossi - <span> pubblicato il 25-10-2020</span></p>
 
-        <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong>parti comuni</strong> da applicare a tutte le pagine</p>
+        <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong class="bold__violet">parti comuni</strong> da applicare a tutte le pagine</p>
 
         <p>Le varie aree saranno quindi suddivise in:</p>
         <ul>
-          <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
-          <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo principale)</li>
-          <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
+          <li>Contenuti di intestazione del tag <code class="box__code">&lt;header&gt;</code></li>
+          <li>Contenuti centrali variabili del tag <code class="box__code">&lt;main&gt;</code> (corpo principale)</li>
+          <li>Contenuti di fine pagina comuni, da inserire nel tag <code class="box__code">&lt;footer&gt;</code></li>
         </ul>
 
         <h2>Formattazione del codice</h2>
-        <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong>selezionare con i CSS</strong>. Perciò i passi saranno:</p>
+        <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong class="bold__violet">selezionare con i CSS</strong>. Perciò i passi saranno:</p>
         <ol>
           <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
           <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
