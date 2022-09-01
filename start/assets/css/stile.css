@@ -11,8 +11,9 @@ body {
     background-position: center;
     margin: 0;
     line-height: 1.2em; 
-
+    
 }
+
 /* HEADER */
 header {
     background-image: linear-gradient(to top, #1e4e6c, #1671a9, #0c7dc4, #4397cb, #2da4ed);
@@ -95,7 +96,7 @@ article h1 {
     line-height: 1.5em;
 }
 
-article p:first-of-type {
+article p:nth-of-type(1) {
     color: rgb(170, 170, 170);
     margin-bottom: 0.8em;
 }
@@ -106,9 +107,16 @@ article p:first-of-type {
 }
 
 article ul {
-    text-indent: 1.8em;
+    margin-left: 1.5em;
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
     
+}
+
+article ol {
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .box__code {
@@ -120,6 +128,54 @@ article ul {
 }
 
 /* TABELLE */
+article table {
+    text-align: center;
+    margin-inline: auto;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: royalblue;
+    margin-bottom: 1.5em;
+    
+
+}
+
+article table caption {
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+article table thead th {
+    height: 2.5rem;
+    width: 30%;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: rgba(204, 204, 204 , 0.3);
+    background-color: royalblue
+}
+
+article table tbody tr {
+    height: 2.5rem;
+    
+}
+
+article table tbody tr:nth-child(even) {
+    background-color: rgba(201, 201, 201, 0.30);
+}
+
+.test {
+    font-weight: 700;
+    color:#0c7dc4
+}
+
+.player {
+    border-radius: 35px;
+    height: 200px;
+    margin-left: 1.3em;
+/* perchè non funziona margin-inline:auto;   ?*/
+}
+
+
+
 
 /* FORM */
 
